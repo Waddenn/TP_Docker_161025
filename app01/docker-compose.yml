@@ -1,0 +1,18 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - mon-net
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    networks:
+      - mon-net
+
+networks:
+  mon-net:
+    driver: bridge
