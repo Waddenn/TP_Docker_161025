@@ -3,12 +3,13 @@
 ## 🔹 Challenge 1 – NodeJS + Redis (`app01`)
 **Objectif :** Déployer une appli NodeJS reliée à Redis.  
 **Commandes :**
+```bash
 cd app01  
 docker compose up -d  
 docker compose ps  
 docker compose logs -f  
 docker compose down -v  
-
+```
 **Accès :** http://localhost:8080  
 **Capture :** 
 
@@ -20,10 +21,11 @@ docker compose down -v
 ## 🔹 Challenge 2 – WordPress + MariaDB + PhpMyAdmin (`app02`)
 **Objectif :** Déployer un WordPress avec sa base et PhpMyAdmin.  
 **Commandes :**
+```bash
 cd app02  
 docker compose up -d  
 docker compose down -v  
-
+```
 **Accès :**  
 - WordPress → http://localhost:8081  
 - PhpMyAdmin → http://localhost:8090  
